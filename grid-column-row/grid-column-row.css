@@ -1,0 +1,19 @@
+main{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    grid-template-rows: 200px 500px 200px;
+
+}
+.header-1{
+    grid-column: 2/-1;/*GridCalman comes and divides the page horizontally, here it starts from the second line and continues to the last line.*/
+}
+.menu-1{
+    grid-column: 1/2;
+    grid-row: 1/3;/*Gridraw will divide the page vertically, here it starts from the first line and continues to the third line.*/
+}
+.General-1{
+    grid-column: 2/-1;
+}
+.footer-1{
+    grid-column: 1/-1
+}

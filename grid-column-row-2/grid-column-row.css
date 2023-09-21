@@ -1,0 +1,23 @@
+main{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    grid-template-rows: 200px 600px 200px;
+    grid-template-areas:
+        'm m h h h h h h h h h h'
+        'm m c c c c c c c c c c'
+        'f f f f f f f f f f f f '
+        ;/*GridTemplates comes with an implementation that divides the page vertically into 12 sections*/
+
+}
+.header-1{
+    grid-area: h/*Gridarias uses the type of implementation that we defined above, where we repeated H 12 times, which means occupy the entire page.*/
+}
+.menu-1{
+    grid-area: m;
+}
+.General-1{
+    grid-area: c;
+}
+.footer-1{
+    grid-area: f;
+}

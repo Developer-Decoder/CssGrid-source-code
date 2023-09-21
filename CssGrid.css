@@ -1,0 +1,42 @@
+.CssGrid-1{
+    display: grid;
+    grid-template-columns: 400px auto 400px;/*The display field determines the type of display that we place the grid in. In this case, there is no change in the grid template property. It works and we can write 200 pixels instead of writing three times. I use a repeater of 200 pixels 3 times.*/
+    grid-template-rows: repeat(3,200px);/*GridTemplateRow specifies the size of the rows*/
+}
+
+.CssGrid-2{
+    display: grid;
+    grid-template-columns: 400px auto 400px;
+    grid-template-rows: repeat(3,200px);
+    row-gap: 22px;/*Row Gap creates a space between each line vertically*/
+}
+
+.CssGrid-3{
+    display: grid;
+    grid-template-columns: 400px auto 400px;
+    grid-template-rows: repeat(3,200px);
+    column-gap: 22px;/*column Gap creates a space between each column horizontally*/
+}
+
+.CssGrid-4{
+    display: grid;
+    grid-template-columns: 400px auto 400px;
+    grid-template-rows: repeat(3,200px);
+    gap: 22px;/*The gap creates a space vertically and horizontally*/
+}
+
+.CssGrid-5{
+    display: grid;
+    grid-template-columns:repeat(auto-fit,400px);
+    grid-template-rows: repeat(3,300px);
+    gap: 22px;/*Autofit considers the size of each of them to be 300 pixels, but it puts each of them in different sizes as much as it can fit, and moves the rest to the next line.*/
+}
+
+.CssGrid-6{
+    display: grid;
+    grid-template-columns:repeat(auto-fit,400px);
+    grid-template-rows: 300px;
+    grid-auto-rows:300px;/*It automatically defines the sizes that are not defined in GridTemplateRow*/
+    gap: 22px;
+}
+

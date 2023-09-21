@@ -1,0 +1,12 @@
+body{
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+}
+
+div{
+
+    background-color: deepskyblue;
+
+
+}
